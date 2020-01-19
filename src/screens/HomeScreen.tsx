@@ -7,11 +7,14 @@ import { WEB_URL } from 'react-native-dotenv'
 class HomeScreen extends React.Component {
   render() {
     return (
-      <View style={{ flex: 1, paddingTop: getStatusBarHeight(), backgroundColor: 'black' }}>
-        <WebView
-          source={{ uri: WEB_URL }}
-          style={{ flex: 1 }}
-        />
+      <View
+        style={{
+          flex: 1,
+          paddingTop: getStatusBarHeight(),
+          backgroundColor: 'black'
+        }}
+      >
+        <WebView source={{ uri: WEB_URL }} style={{ flex: 1 }} />
       </View>
     )
   }
